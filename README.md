@@ -19,7 +19,7 @@ $$
 Where:
 
 $$
-d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}, \quad d_2 = d_1 - \sigma\sqrt{T}
+d_1 = \frac{\ln\left(\frac{S_0}{K}\right) + \left(r + \frac{\sigma^2}{2}\right)T}{\sigma\sqrt{T}}, \quad d_2 = d_1 - \sigma\sqrt{T}
 $$
 
 ### Parameters
@@ -67,9 +67,9 @@ The program prompts for the following parameters:
 
 - Stock price (\( S_0 \))
 - Strike price (\( K \))
-- Time to maturity (in years)
-- Risk-free interest rate (as decimal)
-- Volatility (as decimal)
+- Time to maturity (in years, \( T \))
+- Risk-free interest rate (as decimal, \( r \))
+- Volatility (as decimal, \( \sigma \))
 
 Example interaction:
 
@@ -97,13 +97,6 @@ The project includes:
 - `src/black_scholes.cpp`: Implementation of the Black-Scholes formulas
 - `Makefile`: Build configuration
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[License information will be added based on your project's requirements]
 
 ## References
 
