@@ -6,21 +6,21 @@ This C++ implementation calculates European-style option prices using the Black-
 
 The Black-Scholes formula for a European call option is:
 
-\[
+$$
 C = S_0 N(d_1) - K e^{-rT} N(d_2)
-\]
+$$
 
 For a European put option:
 
-\[
+$$
 P = K e^{-rT} N(-d_2) - S_0 N(-d_1)
-\]
+$$
 
 Where:
 
-\[
+$$
 d_1 = \frac{\ln(S_0/K) + (r + \sigma^2/2)T}{\sigma\sqrt{T}}, \quad d_2 = d_1 - \sigma\sqrt{T}
-\]
+$$
 
 ### Parameters
 
@@ -96,6 +96,14 @@ The project includes:
 - `src/black_scholes.h`: Core calculations and parameter definitions
 - `src/black_scholes.cpp`: Implementation of the Black-Scholes formulas
 - `Makefile`: Build configuration
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+[License information will be added based on your project's requirements]
 
 ## References
 
